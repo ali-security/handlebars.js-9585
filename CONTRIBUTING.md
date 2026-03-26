@@ -173,7 +173,6 @@ A full release via Docker may be completed with the following:
     docker run --rm --interactive --tty \
      --volume $PWD:/app \
      --workdir /app \
-     --user $(id -u):$(id -g) \
      ruby:3.2-slim bash
     ```
    * Execute the following steps:
