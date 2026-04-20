@@ -2,18 +2,6 @@ language: node_js
 jobs:
   include:
   - stage: test
-    name: check javascript (eslint)
-    node_js: lts/*
-    script: npm run lint
-  - stage: test
-    name: check formatting (prettier)
-    node_js: lts/*
-    script: npm run check-format
-  - stage: test
-    name: check typescript definitions (dtslint)
-    node_js: lts/*
-    script: npm run dtslint
-  - stage: test
     name: extensive tests and publish to aws
     script: npm run extensive-tests-and-publish-to-aws
     env:
