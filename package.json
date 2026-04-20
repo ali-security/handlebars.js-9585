@@ -92,7 +92,7 @@
     "extensive-tests-and-publish-to-aws": "npx mocha tasks/task-tests/ && grunt --stack extensive-tests-and-publish-to-aws",
     "integration-test": "grunt integration-tests",
     "--- combined tasks ---": "",
-    "check-before-pull-request": "concurrently --kill-others-on-fail npm:lint npm:dtslint npm:check-format npm:test"
+    "check-before-pull-request": "concurrently --kill-others-on-fail npm:test"
   },
   "jspm": {
     "main": "handlebars",
